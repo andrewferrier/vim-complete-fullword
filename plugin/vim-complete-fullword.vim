@@ -1,4 +1,4 @@
-if exists('g:loaded_complete_fullword') || &cp
+if exists('g:loaded_complete_fullword') || &compatible
     finish
 endif
 let g:loaded_complete_fullword=1
@@ -10,5 +10,7 @@ if v:version >= 704
     endfunction
 
     inoremap <expr> <C-B> <SID>CustomComplete("<C-N>")
-    autocmd CompleteDone * set iskeyword-=-
+    augroup fullword_init
+        autocmd CompleteDone * set iskeyword-=-
+    augroup END
 endif
