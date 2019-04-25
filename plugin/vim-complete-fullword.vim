@@ -9,7 +9,7 @@ if v:version >= 704
         return a:type
     endfunction
 
-    inoremap <expr> <C-B> <SID>CustomComplete("<C-N>")
+    inoremap <expr> <C-X><C-W> <SID>CustomComplete("<C-N>")
     augroup fullword_init
         autocmd CompleteDone * set iskeyword-=-
     augroup END
