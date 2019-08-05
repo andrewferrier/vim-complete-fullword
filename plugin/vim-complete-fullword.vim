@@ -4,7 +4,7 @@ endif
 let g:loaded_complete_fullword=1
 
 if v:version >= 704
-    function! s:CustomComplete(type)
+    function! s:CustomComplete(type) abort
         set iskeyword+=-
         return a:type
     endfunction
