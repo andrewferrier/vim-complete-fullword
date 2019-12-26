@@ -1,3 +1,5 @@
+*This plugin is no longer maintained. I have merged its behaviour into my local `~/.vimrc`. I leave it here in case it is of value to anyone.*
+
 # vim-complete-fullword
 
 Vim plugin to provide a command which can be used to complete "full" words
@@ -5,8 +7,8 @@ Vim plugin to provide a command which can be used to complete "full" words
 a valid word character). This can be extremely useful when programming, as
 typically `-` is considered a valid character in identifiers.
 
-Currently this plugin has the <C-N> equivalent command hardcode bound to
-<C-B>.
+Currently this plugin has this behaviour hardcode bound to
+`<C-X><C-W>`.
 
 ## Installation
 
